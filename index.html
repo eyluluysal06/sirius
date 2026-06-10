@@ -1,24 +1,104 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Sirius!</title>
+    <title>Le Blog de Sirius</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-    <div id="bio" style="font-size: 32px;"></div>
+    <!-- En-tête du site -->
+    <header>
+        <img src="images/sticker-camera.jpeg" alt="Sticker appareil photo" class="sticker sticker-left">
+        <h1>Le blog de Sirius ✨</h1>
+        <p>Petit chihuahua, grande star de la maison</p>
+        <img src="images/sticker-coeur.jpeg" alt="Sticker cœur" class="sticker sticker-right">
+    </header>
 
-    <img src="4bed85de-e785-4881-8d83-7608b8796a07.jpeg">
-    <img src="e37f7be3-7f44-4d41-b572-a4bfe67e5248.jpeg">
-    <img src="fd49bf5d-5f06-4fcc-abcc-f617eabbd0c2.jpeg">
-    <img src="fff86799-3d96-4053-abf7-924ad7d6fb9b.jpeg">
+    <!-- Menu de navigation -->
+    <nav>
+        <a href="#presentation">Présentation</a>
+        <a href="#personnalite">Sa personnalité</a>
+        <a href="#sirius">Pourquoi Sirius ?</a>
+        <a href="#galerie">Galerie</a>
+    </nav>
 
-    <script>
-        fetch('bio.txt')
-            .then(r => r.text())
-            .then(text => document.getElementById('bio').textContent = text);
-    </script>
+    <!-- Section principale -->
+    <main>
+
+        <section id="presentation" class="card pink-card">
+            <h2>Qui est Sirius ? 🐾</h2>
+            <p>
+                Sirius est un chihuahua à poil long de 5 ans. C’est un chien joueur,
+                affectueux et très attaché à sa famille. Il adore les câlins, les promenades
+                et surtout être au centre de l’attention.
+            </p>
+            <p>
+                Récemment, Sirius a pris un peu de poids et pèse environ 7 kg, mais cela ne
+                l’empêche pas d’être un compagnon plein d’amour, de douceur et de bonne humeur.
+                Avec ses grands yeux brillants et son petit air de diva, il sait toujours comment
+                se faire remarquer.
+            </p>
+            <img src="images/sirius-1.jpeg" alt="Sirius sur le canapé" class="big-photo">
+        </section>
+
+        <section id="personnalite" class="card yellow-card">
+            <img src="images/sticker-megaphone.jpeg" alt="Sticker mégaphone" class="small-sticker">
+            <h2>Sa personnalité de mini star</h2>
+            <p>
+                Sirius a une vraie énergie de star des années 2000 : un peu drama, très photogénique,
+                et toujours prêt à voler la vedette. Il aime qu’on le regarde, qu’on lui parle,
+                et bien sûr qu’on lui dise qu’il est le plus beau.
+            </p>
+            <ul>
+                <li>Son activité préférée : recevoir des câlins.</li>
+                <li>Son mood quotidien : petit prince de la maison.</li>
+                <li>Son talent caché : poser pour les photos comme un mannequin.</li>
+                <li>Son obsession : suivre sa famille partout.</li>
+                <li>Son style : poil noir brillant, regard intense et attitude de célébrité.</li>
+            </ul>
+        </section>
+
+        <section id="sirius" class="card blue-card">
+            <h2>Pourquoi il s’appelle Sirius ? 🌟</h2>
+            <p>
+                Sirius porte le nom de l’étoile Sirius, l’étoile la plus brillante du ciel nocturne.
+                Elle fait partie de la constellation du Grand Chien. Ce nom lui va parfaitement,
+                parce que même s’il est petit, il brille énormément dans la vie de sa famille.
+            </p>
+            <p>
+                Comme l’étoile, Sirius attire l’attention naturellement. Il a une présence spéciale,
+                une énergie lumineuse et un petit côté mystérieux qui le rend unique.
+            </p>
+            <img src="images/constellation-sirius.jpeg" alt="Image de la constellation Sirius" class="big-photo">
+        </section>
+
+        <section class="card purple-card">
+            <h2>Une journée dans la vie de Sirius</h2>
+            <p>
+                Le matin, Sirius aime se réveiller doucement, observer tout le monde et attendre
+                son moment câlin. Ensuite, il inspecte la maison comme un petit chef de sécurité.
+                L’après-midi, il adore les balades, les siestes au soleil et les moments photo.
+                Le soir, il redevient le bébé de la famille et cherche le meilleur endroit pour dormir.
+            </p>
+        </section>
+
+        <section id="galerie" class="card gallery-card">
+            <h2>Galerie photo 📸</h2>
+            <div class="gallery">
+                <img src="images/sirius-2.jpeg" alt="Sirius souriant">
+                <img src="images/sirius-3.jpeg" alt="Sirius au soleil">
+                <img src="images/sirius-et-moi-1.jpeg" alt="Sirius porté dans le jardin">
+                <img src="images/sirius-et-moi-2.jpeg" alt="Sirius dans les bras">
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Pied de page -->
+    <footer>
+        <p>Créé avec amour pour Sirius, le chihuahua le plus lumineux ✨</p>
+    </footer>
 
 </body>
 </html>
