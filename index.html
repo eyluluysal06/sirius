@@ -30,9 +30,9 @@
 </head>
 <body>
 
-    <img src="4bed85de-e785-4881-8d83-7608b8796a07.jpeg" alt="Image 1">
+    <div id="bio">bio go brrr</div>
 
-    <div id="bio">Loading bio...</div>
+    <img src="4bed85de-e785-4881-8d83-7608b8796a07.jpeg" alt="Image 1">
 
     <img src="e37f7be3-7f44-4d41-b572-a4bfe67e5248.jpeg" alt="Image 2">
 
@@ -48,7 +48,7 @@
             })
             .catch(error => {
                 document.getElementById('bio').textContent =
-                    'Could not load bio.txt';
+                    'Error loading main text file';
                 console.error(error);
             });
     </script>
