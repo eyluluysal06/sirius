@@ -1,56 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sirius!</title></title>
-
-    <style>
-        body {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 20px;
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-        }
-
-        img {
-            width: 100%;
-            max-width: 800px;
-            display: block;
-            margin: 30px auto;
-            border-radius: 8px;
-        }
-
-        #bio {
-            margin: 40px 0;
-            white-space: pre-wrap;
-        }
-    </style>
+    <title>Sirius!</title>
 </head>
 <body>
 
-    <div id="bio">bio go brrr</div>
+    <div id="bio"></div>
 
-    <img src="4bed85de-e785-4881-8d83-7608b8796a07.jpeg" alt="Image 1">
-
-    <img src="e37f7be3-7f44-4d41-b572-a4bfe67e5248.jpeg" alt="Image 2">
-
-    <img src="fd49bf5d-5f06-4fcc-abcc-f617eabbd0c2.jpeg" alt="Image 3">
-
-    <img src="fff86799-3d96-4053-abf7-924ad7d6fb9b.jpeg" alt="Image 4">
+    <img src="4bed85de-e785-4881-8d83-7608b8796a07.jpeg">
+    <img src="e37f7be3-7f44-4d41-b572-a4bfe67e5248.jpeg">
+    <img src="fd49bf5d-5f06-4fcc-abcc-f617eabbd0c2.jpeg">
+    <img src="fff86799-3d96-4053-abf7-924ad7d6fb9b.jpeg">
 
     <script>
         fetch('bio.txt')
-            .then(response => response.text())
-            .then(text => {
-                document.getElementById('bio').textContent = text;
-            })
-            .catch(error => {
-                document.getElementById('bio').textContent =
-                    'Error loading main text file';
-                console.error(error);
-            });
+            .then(r => r.text())
+            .then(text => document.getElementById('bio').textContent = text);
     </script>
 
 </body>
